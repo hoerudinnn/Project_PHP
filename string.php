@@ -1,4 +1,4 @@
-Di PHP, *string* adalah tipe data yang digunakan untuk menyimpan teks, seperti kata-kata, kalimat, atau karakter alfanumerik lainnya. String bisa berisi teks apa saja dan diapit dengan tanda kutip tunggal (`'`) atau kutip ganda (`"`).
+<!-- Di PHP, *string* adalah tipe data yang digunakan untuk menyimpan teks, seperti kata-kata, kalimat, atau karakter alfanumerik lainnya. String bisa berisi teks apa saja dan diapit dengan tanda kutip tunggal (`'`) atau kutip ganda (`"`). -->
 
 <!-- ### Cara Membuat String di PHP -->
 
