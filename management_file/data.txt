@@ -1,0 +1,1 @@
+a:3:{i:0;a:2:{s:4:"nama";s:8:"Hoerudin";s:6:"alamat";s:5:"Bogor";}i:1;a:2:{s:4:"nama";s:7:"Bambang";s:6:"alamat";s:7:"Bandung";}i:2;a:2:{s:4:"nama";s:9:"Putri Nur";s:6:"alamat";s:7:"Jakarta";}}
