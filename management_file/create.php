@@ -21,3 +21,7 @@ $karyawan = [
 
 $data = json_encode($karyawan);
 file_put_contents('karyawan.json', $data);
+
+$output = file_get_contents('karyawan.json');
+$hasil = json_decode($output);
+print_r($hasil);
