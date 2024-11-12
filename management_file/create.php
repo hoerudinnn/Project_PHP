@@ -9,4 +9,6 @@ $data = serialize($anggota);
 file_put_contents('data.txt', $data);
 
 $outuput = file_get_contents('data.txt');
-print_r($outuput);
+$hasil = unserialize($outuput);
+print_r($hasil);
+
