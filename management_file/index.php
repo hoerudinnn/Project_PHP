@@ -38,17 +38,17 @@ if(isset($_POST['todo']))
         <li>
             <input type="checkbox" name="todo" id="">
             <label for="">Todo 1</label>
-            <a href="">hapus</a>
+            <a href="#">hapus</a>
         </li>
         <li>
             <input type="checkbox" name="todo" id="">
             <label for="">Todo 2</label>
-            <a href="">hapus</a>
+            <a href="#">hapus</a>
         </li>
         <li>
             <input type="checkbox" name="todo" id="">
             <label for="">Todo 3</label>
-            <a href="">hapus</a>
+            <a href="#">hapus</a>
         </li>
     </ul>
 </body>
