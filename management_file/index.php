@@ -1,10 +1,29 @@
+<?php
+$todos = [];
+$file = file_get_contents('todo.txt');
+$todos = unserialize($file);
+
+if (isset($_POST['todo'])) {
+    $todo = $_POST['todo'];
+    $todos[] = [
+        'todo' => $todo,
+        'status' => 0,
+    ];
+    $daftarBelanja = serialize($todos);
+    file_put_contents('todo.txt', $daftarBelanja);
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Todo App</h1>
     <form action="">
@@ -30,4 +49,5 @@
         </li>
     </ul>
 </body>
+
 </html>
