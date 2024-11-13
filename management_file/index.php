@@ -1,17 +1,20 @@
 <?php
-$todos = [];
-$file = file_get_contents('todo.txt');
-$todos = unserialize($file);
-
-if (isset($_POST['todo'])) {
-    $todo = $_POST['todo'];
-    $todos[] = [
-        'todo' => $todo,
-        'status' => 0,
-    ];
-    $daftarBelanja = serialize($todos);
-    file_put_contents('todo.txt', $daftarBelanja);
-
+//total array yang disiapkan untuk disimpan
+$todos	= []; 
+//membaca file todo.txt
+$file	=	file_get_contents('todo.txt');
+//mengubah format serialize menjadi array
+$todos	=	unserialize($file);
+//Jika ditemukan todo yang dikirim melalui methode POST
+if(isset($_POST['todo']))
+{
+    $data	= $_POST['todo']; // mengabil data yang di input pada form
+    $todos[]=[
+                'todo'	=> $data,
+                'status'=>0
+    		  ];
+	$daftar_belanja = serialize($todos);
+    file_put_contents('todo.txt',$daftar_belanja);
 }
 ?>
 
